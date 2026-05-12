@@ -1,0 +1,22 @@
+lan_code,lan_name,nuts3_code,region_type
+1,Stockholm,SE110,Metropolitan
+3,Uppsala,SE121,Large city
+4,Sodermanland,SE122,Medium city
+5,Ostergotland,SE123,Medium city
+6,Jonkoping,SE211,Medium city
+7,Kronoberg,SE212,Small city
+8,Kalmar,SE213,Small city
+9,Gotland,SE214,Island
+10,Blekinge,SE221,Small city
+12,Skane,SE224,Metropolitan
+13,Halland,SE231,Large city
+14,Vastra Gotaland,SE232,Metropolitan
+17,Varmland,SE311,Medium city
+18,Orebro,SE312,Medium city
+19,Vastmanland,SE313,Medium city
+20,Dalarna,SE321,Rural
+21,Gavleborg,SE322,Rural
+22,Vasternorrland,SE331,Rural
+23,Jamtland,SE332,Sparsely populated
+24,Vasterbotten,SE333,Rural
+25,Norrbotten,SE334,Sparsely populated

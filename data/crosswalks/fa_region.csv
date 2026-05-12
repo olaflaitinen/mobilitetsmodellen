@@ -1,0 +1,27 @@
+fa_region_code,fa_region_name,fa_type,primary_lan_code,primary_lan_name
+1,Stockholm,Metropolitan,1,Stockholm
+2,Uppsala,Large city,3,Uppsala
+3,Eskilstuna,Medium city,4,Sodermanland
+4,Linkoping,Large city,5,Ostergotland
+5,Norrkoping,Medium city,5,Ostergotland
+6,Jonkoping,Medium city,6,Jonkoping
+7,Vaxjo,Medium city,7,Kronoberg
+8,Kalmar,Small city,8,Kalmar
+9,Visby,Island,9,Gotland
+10,Karlskrona,Small city,10,Blekinge
+11,Kristianstad,Medium city,12,Skane
+12,Malmo,Metropolitan,12,Skane
+13,Helsingborg,Large city,12,Skane
+14,Halmstad,Medium city,13,Halland
+15,Goteborg,Metropolitan,14,Vastra Gotaland
+16,Boras,Medium city,14,Vastra Gotaland
+17,Skovde,Medium city,14,Vastra Gotaland
+18,Karlstad,Medium city,17,Varmland
+19,Orebro,Large city,18,Orebro
+20,Vasteras,Large city,19,Vastmanland
+21,Falun-Borlange,Medium city,20,Dalarna
+22,Gavle,Medium city,21,Gavleborg
+23,Sundsvall,Medium city,22,Vasternorrland
+24,Ostersund,Medium city,23,Jamtland
+25,Umea,Large city,24,Vasterbotten
+26,Lulea,Large city,25,Norrbotten
