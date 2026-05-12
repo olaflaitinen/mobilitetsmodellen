@@ -1,0 +1,5 @@
+{
+  "_comment": "Expected SHA-256 checksums for replication outputs. Populate after first run.",
+  "_seed": "SYNTHETIC_SEED=19960307, MODEL_SEED=20251008, CROSSFIT_SEED=13",
+  "_platform": "Python 3.12, Ubuntu 22.04, OMP_NUM_THREADS=1"
+}
