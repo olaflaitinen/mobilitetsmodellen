@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: >-
+  Mobilitetsmodellen: machine-learning estimators of intergenerational mobility in Sweden
+version: 0.1.0
+date-released: "2024-01-01"
+license: EUPL-1.2
+repository-code: https://github.com/olaflaitinen/mobilitetsmodellen
+url: https://olaflaitinen.github.io/mobilitetsmodellen
+abstract: >-
+  Mobilitetsmodellen provides production-grade Python estimators for intergenerational income and
+  rank mobility in Sweden. The framework combines classical rank-rank regressions, intergenerational
+  income elasticities, and transition-matrix estimators with double machine learning and generalised
+  random forests under cross-fitting. Empirical-Bayes shrinkage stabilises municipality-level
+  estimates. Comparative modules align Swedish results with OECD IDD conventions.
+keywords:
+  - intergenerational mobility
+  - Sweden
+  - rank-rank
+  - double machine learning
+  - causal forests
+  - empirical Bayes
+  - EUPL-1.2
+  - OSOR
+  - FAIR4RS
+  - municipality
+  - income inequality
+authors:
+  - family-names: Laitinen-Fredriksson Lundstrom Imanov
+    given-names: Gustav Olaf Yunus
+    name-suffix: "MD, RA, PhD"
+    orcid: https://orcid.org/0009-0006-5184-0810
+    email: olaf.laitinen@su.se
+    affiliation: Department of Economics, Stockholm University
+identifiers:
+  - type: url
+    value: https://github.com/olaflaitinen/mobilitetsmodellen
+    description: GitHub repository
+references:
+  - type: article
+    title: "Double/Debiased Machine Learning for Treatment and Structural Parameters"
+    authors:
+      - family-names: Chernozhukov
+        given-names: Victor
+      - family-names: Chetverikov
+        given-names: Denis
+      - family-names: Demirer
+        given-names: Mert
+      - family-names: Duflo
+        given-names: Esther
+      - family-names: Hansen
+        given-names: Christian
+      - family-names: Newey
+        given-names: Whitney
+      - family-names: Robins
+        given-names: James
+    journal: "The Econometrics Journal"
+    year: 2018
+    volume: 21
+    issue: 1

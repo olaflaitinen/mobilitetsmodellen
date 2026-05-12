@@ -1,0 +1,57 @@
+{
+  "upload_type": "software",
+  "title": "Mobilitetsmodellen: machine-learning estimators of intergenerational mobility in Sweden",
+  "description": "Mobilitetsmodellen provides production-grade Python estimators for intergenerational income and rank mobility in Sweden. The framework combines classical rank-rank regressions, intergenerational income elasticities, and transition-matrix estimators with double machine learning (DoubleML) and generalised random forests under cross-fitting. Empirical-Bayes shrinkage stabilises municipality-level estimates to support an interactive mobility atlas.",
+  "version": "0.1.0",
+  "license": "eupl-1.2",
+  "access_right": "open",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Laitinen-Fredriksson Lundstrom Imanov, Gustav Olaf Yunus",
+      "affiliation": "Department of Economics, Stockholm University",
+      "orcid": "0009-0006-5184-0810"
+    }
+  ],
+  "keywords": [
+    "intergenerational mobility",
+    "Sweden",
+    "rank-rank slope",
+    "intergenerational income elasticity",
+    "double machine learning",
+    "causal forests",
+    "empirical Bayes",
+    "municipality",
+    "EUPL-1.2",
+    "OSOR",
+    "FAIR4RS",
+    "research software",
+    "Swedish economy"
+  ],
+  "communities": [
+    {"identifier": "zenodo"},
+    {"identifier": "osor"}
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isPartOf",
+      "identifier": "https://github.com/olaflaitinen/inkomstprognos",
+      "scheme": "url"
+    },
+    {
+      "relation": "isPartOf",
+      "identifier": "https://github.com/olaflaitinen/formoegenhetsanalys",
+      "scheme": "url"
+    },
+    {
+      "relation": "isPartOf",
+      "identifier": "https://github.com/olaflaitinen/skatteprogressivitet",
+      "scheme": "url"
+    },
+    {
+      "relation": "isPartOf",
+      "identifier": "https://github.com/olaflaitinen/arvsdynamik",
+      "scheme": "url"
+    }
+  ]
+}
