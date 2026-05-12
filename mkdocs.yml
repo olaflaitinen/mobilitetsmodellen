@@ -1,0 +1,96 @@
+site_name: Mobilitetsmodellen
+site_description: Machine-learning estimators of intergenerational mobility in Sweden
+site_url: https://olaflaitinen.github.io/mobilitetsmodellen
+repo_url: https://github.com/olaflaitinen/mobilitetsmodellen
+repo_name: olaflaitinen/mobilitetsmodellen
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_source: true
+            show_root_heading: true
+            docstring_style: google
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Methodology:
+      - Overview: methodology.md
+      - Life-Cycle Alignment: life-cycle-alignment.md
+      - Rank-Rank Slope: rank-rank.md
+      - Elasticity (IGE): elasticity.md
+      - Double ML: double-ml.md
+      - Causal Forests: causal-forests.md
+      - Mediation Analysis: mediation.md
+      - Empirical Bayes: empirical-bayes.md
+      - Mobility Atlas: mobility-atlas.md
+      - Cross-Country Benchmarks: cross-country.md
+  - Data: data.md
+  - API Reference: api.md
+  - Reproducibility: reproducibility.md
+  - Compliance:
+      - EU Compliance: eu-compliance.md
+      - GDPR: gdpr.md
+      - DPIA Summary: dpia-summary.md
+      - Swedish Legal Basis: swedish-legal-basis.md
+      - OSOR: osor.md
+      - FAIR4RS: fair4rs.md
+      - Accessibility: accessibility.md
+  - Governance:
+      - Governance Model: governance.md
+      - Citation: citation.md
+      - Glossary: glossary.md
+      - Deviations: deviations.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/olaflaitinen/mobilitetsmodellen
+    - icon: fontawesome/solid/graduation-cap
+      link: https://orcid.org/0009-0006-5184-0810
