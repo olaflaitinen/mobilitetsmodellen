@@ -1,0 +1,47 @@
+name: Feature request
+description: Suggest a new feature or improvement
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement. Please describe the feature clearly.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: Is this feature request related to a problem? Please describe.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What would you like to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What alternative approaches have you considered?
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area of the codebase
+      options:
+        - estimators
+        - alignment
+        - ingestion
+        - geographic
+        - benchmarking
+        - reporting
+        - pipelines
+        - CLI
+        - documentation
+        - CI/CD
+        - other
