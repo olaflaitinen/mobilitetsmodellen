@@ -1,0 +1,21 @@
+Mobilitetsmodellen
+Copyright 2024-2026 Gustav Olaf Yunus Laitinen-Fredriksson Lundstrom Imanov
+
+Maintainer
+  Name:        Gustav Olaf Yunus Laitinen-Fredriksson Lundstrom Imanov, MD, RA, PhD
+  ORCID iD:    https://orcid.org/0009-0006-5184-0810
+  Affiliation: Department of Economics, Stockholm University
+               SE-106 91 Stockholm, Sweden
+  ROR:         https://ror.org/05f0yaq80
+  Email:       olaf.laitinen@su.se (institutional, primary)
+               olaf.laitinen@gmail.com (personal mirror)
+
+This software is the fifth module of a twenty-project research-software portfolio on income,
+wealth, taxation, inequality, and intergenerational mobility in Sweden, produced at the
+Department of Economics, Stockholm University.
+
+No real personal data, no real microdata, and no real kinship graphs are committed to this
+repository. All data fixtures are synthetic and released under CC0-1.0. Crosswalk tables are
+curated annotations of publicly available SCB geographic reference data.
+
+Licensed under the European Union Public Licence v. 1.2 (EUPL-1.2).
