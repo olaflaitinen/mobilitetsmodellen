@@ -1,0 +1,28 @@
+[extend]
+useDefault = true
+
+[[rules]]
+id = "personnummer"
+description = "Swedish personal identity number (personnummer)"
+regex = '''\b(19|20)\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])-?\d{4}\b'''
+tags = ["pii", "sweden"]
+
+[[rules]]
+id = "organisationsnummer"
+description = "Swedish organisation number"
+regex = '''\b\d{6}-\d{4}\b'''
+tags = ["pii", "sweden"]
+
+[[rules]]
+id = "scb-mona-token"
+description = "Possible SCB MONA/SAFE authentication token"
+regex = '''(?i)(mona|safe)[_\-\s]?(token|key|secret|password)[_\-\s]?[:=]\s*['"]?[A-Za-z0-9+/]{20,}'''
+tags = ["secret", "scb"]
+
+[allowlist]
+description = "Global allowlist"
+paths = [
+    "tests/",
+    "data/synthetic/",
+    ".gitleaks.toml",
+]
