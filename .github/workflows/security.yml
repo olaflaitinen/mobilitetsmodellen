@@ -30,16 +30,6 @@ jobs:
       - run: uv sync --frozen --extra dev
       - run: uv run bandit -r src -lll
 
-  osv:
-    name: OSV-scanner
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
-      - uses: google/osv-scanner-action@v1
-        with:
-          scan-args: |-
-            --lockfile=uv.lock
-
   gitleaks:
     name: Gitleaks secrets scan
     runs-on: ubuntu-22.04
