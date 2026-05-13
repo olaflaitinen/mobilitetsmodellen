@@ -33,7 +33,11 @@ authors:
     orcid: https://orcid.org/0009-0006-5184-0810
     email: olaf.laitinen@su.se
     affiliation: Department of Economics, Stockholm University
+doi: 10.5281/zenodo.20151412
 identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20151412
+    description: Zenodo DOI (all versions)
   - type: url
     value: https://github.com/olaflaitinen/mobilitetsmodellen
     description: GitHub repository

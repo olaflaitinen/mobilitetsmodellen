@@ -5,7 +5,7 @@
 [![CI](https://github.com/olaflaitinen/mobilitetsmodellen/actions/workflows/ci.yml/badge.svg)](https://github.com/olaflaitinen/mobilitetsmodellen/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/olaflaitinen/mobilitetsmodellen/branch/main/graph/badge.svg)](https://codecov.io/gh/olaflaitinen/mobilitetsmodellen)
 [![REUSE compliant](https://api.reuse.software/badge/github.com/olaflaitinen/mobilitetsmodellen)](https://api.reuse.software/info/github.com/olaflaitinen/mobilitetsmodellen)
-[![DOI](https://zenodo.org/badge/latestdoi/olaflaitinen/mobilitetsmodellen.svg)](https://zenodo.org/record/olaflaitinen/mobilitetsmodellen)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20151412.svg)](https://doi.org/10.5281/zenodo.20151412)
 
 ## Abstract
 
