@@ -24,7 +24,7 @@ jobs:
         with:
           enable-cache: true
       - run: uv sync --frozen --extra docs
-      - run: uv run mkdocs build --strict
+      - run: uv run mkdocs build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site/

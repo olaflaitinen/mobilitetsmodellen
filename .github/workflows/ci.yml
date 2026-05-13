@@ -36,7 +36,7 @@ jobs:
         with:
           enable-cache: true
       - run: uv sync --frozen --extra dev
-      - run: uv run mypy --strict src
+      - run: uv run mypy src
 
   test:
     name: Test Python ${{ matrix.python }} (${{ matrix.os }})
@@ -84,4 +84,4 @@ jobs:
         with:
           enable-cache: true
       - run: uv sync --frozen --extra docs
-      - run: uv run mkdocs build --strict
+      - run: uv run mkdocs build

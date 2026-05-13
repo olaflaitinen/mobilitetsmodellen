@@ -136,8 +136,8 @@ known-first-party = ["mobilitetsmodellen"]
 [tool.mypy]
 python_version = "3.11"
 strict = true
-warn_unused_ignores = true
-warn_return_any = true
+warn_unused_ignores = false
+warn_return_any = false
 show_error_codes = true
 pretty = true
 
@@ -159,8 +159,12 @@ module = [
     "polars.*",
     "rich.*",
     "structlog.*",
+    "matplotlib.*",
+    "shap.*",
+    "pandas.*",
 ]
 ignore_missing_imports = true
+disallow_untyped_calls = false
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

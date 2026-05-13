@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from typing import Literal
+
 import polars as pl
 
 
@@ -10,7 +12,7 @@ def compute_ranks(
     income_col: str = "income",
     cohort_col: str = "birth_year",
     rank_col: str = "rank",
-    method: str = "average",
+    method: Literal["average", "min", "max", "dense", "ordinal", "random"] = "average",
 ) -> pl.DataFrame:
     """Compute income ranks within each cohort stratum.
 
@@ -30,7 +32,7 @@ def compute_ranks(
     return (
         df.with_columns(
             pl.col(income_col)
-            .rank(method=method, descending=False)  # type: ignore[call-arg]
+            .rank(method=method, descending=False)
             .over(cohort_col)
             .alias("_raw_rank")
         )

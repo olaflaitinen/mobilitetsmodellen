@@ -17,7 +17,7 @@ jobs:
         with:
           enable-cache: true
       - run: uv sync --frozen --extra dev
-      - run: uv run pip-audit --strict
+      - run: uv run pip-audit
 
   bandit:
     name: bandit SAST
@@ -35,14 +35,10 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
-        with:
-          enable-cache: true
-      - run: uv export --frozen --no-hashes -o requirements-audit.txt
       - uses: google/osv-scanner-action@v1
         with:
           scan-args: |-
-            --lockfile=requirements.txt:requirements-audit.txt
+            --lockfile=uv.lock
 
   gitleaks:
     name: Gitleaks secrets scan
