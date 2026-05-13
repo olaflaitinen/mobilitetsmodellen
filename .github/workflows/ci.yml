@@ -57,7 +57,7 @@ jobs:
         env:
           OMP_NUM_THREADS: "1"
           OPENBLAS_NUM_THREADS: "1"
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
         if: matrix.os == 'ubuntu-22.04' && matrix.python == '3.12'
         with:
           files: coverage.xml
