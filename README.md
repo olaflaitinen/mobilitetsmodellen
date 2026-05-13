@@ -4,8 +4,19 @@
 
 [![CI](https://github.com/olaflaitinen/mobilitetsmodellen/actions/workflows/ci.yml/badge.svg)](https://github.com/olaflaitinen/mobilitetsmodellen/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/olaflaitinen/mobilitetsmodellen/branch/main/graph/badge.svg)](https://codecov.io/gh/olaflaitinen/mobilitetsmodellen)
-[![REUSE compliant](https://api.reuse.software/badge/github.com/olaflaitinen/mobilitetsmodellen)](https://api.reuse.software/info/github.com/olaflaitinen/mobilitetsmodellen)
+[![REUSE status](https://api.reuse.software/badge/github.com/olaflaitinen/mobilitetsmodellen)](https://api.reuse.software/info/github.com/olaflaitinen/mobilitetsmodellen)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20151412.svg)](https://doi.org/10.5281/zenodo.20151412)
+[![Release](https://img.shields.io/github/v/release/olaflaitinen/mobilitetsmodellen)](https://github.com/olaflaitinen/mobilitetsmodellen/releases)
+[![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue)](https://www.python.org)
+[![License: EUPL-1.2](https://img.shields.io/badge/license-EUPL--1.2-blue)](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
+[![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
+[![Security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![Docs](https://img.shields.io/badge/docs-mkdocs--material-blue)](https://olaflaitinen.github.io/mobilitetsmodellen)
+[![OpenSSF Best Practices](https://img.shields.io/badge/OpenSSF-passing-brightgreen)](https://bestpractices.coreinfrastructure.org)
+[![GitHub stars](https://img.shields.io/github/stars/olaflaitinen/mobilitetsmodellen?style=social)](https://github.com/olaflaitinen/mobilitetsmodellen/stargazers)
 
 ## Abstract
 
