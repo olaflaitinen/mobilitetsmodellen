@@ -12,39 +12,43 @@ jobs:
     name: pip-audit
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v6
-      - uses: astral-sh/setup-uv@v7
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
-      - run: uv sync --frozen
+      - run: uv sync --frozen --extra dev
       - run: uv run pip-audit --strict
 
   bandit:
     name: bandit SAST
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v6
-      - uses: astral-sh/setup-uv@v7
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
-      - run: uv sync --frozen
+      - run: uv sync --frozen --extra dev
       - run: uv run bandit -r src -lll
 
   osv:
     name: OSV-scanner
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+      - run: uv export --frozen --no-hashes -o requirements-audit.txt
       - uses: google/osv-scanner-action@v1
         with:
           scan-args: |-
-            --lockfile=uv.lock
+            --lockfile=requirements.txt:requirements-audit.txt
 
   gitleaks:
     name: Gitleaks secrets scan
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - uses: gitleaks/gitleaks-action@v2
@@ -57,7 +61,7 @@ jobs:
     permissions:
       security-events: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
       - uses: github/codeql-action/init@v3
         with:
           languages: python

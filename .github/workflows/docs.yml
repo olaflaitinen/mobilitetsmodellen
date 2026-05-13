@@ -19,13 +19,13 @@ jobs:
     name: Build documentation
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v6
-      - uses: astral-sh/setup-uv@v7
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
-      - run: uv sync --frozen --all-extras
+      - run: uv sync --frozen --extra docs
       - run: uv run mkdocs build --strict
-      - uses: actions/upload-pages-artifact@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: site/
 
@@ -37,5 +37,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/deploy-pages@v5
+      - uses: actions/deploy-pages@v4
         id: deployment

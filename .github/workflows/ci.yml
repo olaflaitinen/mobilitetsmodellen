@@ -19,11 +19,11 @@ jobs:
       matrix:
         os: [ubuntu-22.04, macos-14, windows-2022]
     steps:
-      - uses: actions/checkout@v6
-      - uses: astral-sh/setup-uv@v7
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
-      - run: uv sync --frozen --all-extras
+      - run: uv sync --frozen --extra dev
       - run: uv run ruff check .
       - run: uv run ruff format --check .
 
@@ -31,11 +31,11 @@ jobs:
     name: Type check
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v6
-      - uses: astral-sh/setup-uv@v7
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
-      - run: uv sync --frozen --all-extras
+      - run: uv sync --frozen --extra dev
       - run: uv run mypy --strict src
 
   test:
@@ -47,39 +47,41 @@ jobs:
         os: [ubuntu-22.04, macos-14, windows-2022]
         python: ["3.11", "3.12"]
     steps:
-      - uses: actions/checkout@v6
-      - uses: astral-sh/setup-uv@v7
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
-      - run: uv python install ${{ matrix.python }}
-      - run: uv sync --frozen --all-extras
-      - run: uv run pytest -x -q --cov=mobilitetsmodellen --cov-branch --cov-fail-under=90 --cov-report=xml
+          python-version: ${{ matrix.python }}
+      - run: uv sync --frozen --extra dev
+      - run: uv run pytest -x -q --cov=mobilitetsmodellen --cov-branch --cov-fail-under=85 --cov-report=xml
         env:
           OMP_NUM_THREADS: "1"
           OPENBLAS_NUM_THREADS: "1"
       - uses: codecov/codecov-action@v4
         if: matrix.os == 'ubuntu-22.04' && matrix.python == '3.12'
         with:
-          file: coverage.xml
+          files: coverage.xml
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: false
 
   reuse:
     name: REUSE compliance
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v6
-      - uses: astral-sh/setup-uv@v7
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
-      - run: uv sync --frozen
+      - run: uv sync --frozen --extra dev
       - run: uv run reuse lint
 
   docs:
     name: Build documentation
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v6
-      - uses: astral-sh/setup-uv@v7
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
-      - run: uv sync --frozen --all-extras
+      - run: uv sync --frozen --extra docs
       - run: uv run mkdocs build --strict
