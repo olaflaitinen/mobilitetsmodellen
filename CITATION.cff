@@ -4,7 +4,7 @@ type: software
 title: >-
   Mobilitetsmodellen: machine-learning estimators of intergenerational mobility in Sweden
 version: 0.1.0
-date-released: "2024-01-01"
+date-released: "2026-05-13"
 license: EUPL-1.2
 repository-code: https://github.com/olaflaitinen/mobilitetsmodellen
 url: https://olaflaitinen.github.io/mobilitetsmodellen
